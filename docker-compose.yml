@@ -1,0 +1,8 @@
+version: '3'
+services:
+  servlet_app:
+    image: tomcat:10-jdk11-corretto
+    ports:
+      - 8080:8080
+    volumes:
+      - ./webapps:/usr/local/tomcat/webapps/
